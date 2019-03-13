@@ -1,0 +1,16 @@
+﻿@model WebTinTucTraining.Models.HelloModel
+@{
+    ViewBag.Title = "Trang chủ";
+}
+
+<div>
+    <p>@ViewBag.Hello</p>
+    <p>@ViewData["XinChao"]</p>
+
+    <p>Tên: @Model.FirstName</p>
+    <p>Ho: @Model.LastName</p>
+    <a href="/test">Test Controller ở đây</a>
+    <br />
+    @Html.ActionLink("Test Controller nữa", "Index", "Test")
+
+</div>
